@@ -1,0 +1,80 @@
+.sides {
+  display: flex;
+  z-index: 1;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  min-height: 85px;
+  width: 100%;
+  background-color: transparent;
+  justify-content: space-between;
+
+}
+.burgerBtn{
+  @include for-phone{
+    display: none;
+  }
+}
+.navLeft {
+  display: flex;
+  column-gap: 28px;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+    @include for-phone{
+      width: 80px;
+    }
+  }
+}
+.chiroq{
+  font-size: 25px;
+}
+.navSearch {
+  width: 60%;
+  margin-left: 59px;
+  padding: 0px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  border-radius: 22px;
+
+  @include for-phone{
+    margin: 5px;
+    padding: 0 12px;
+  }
+  input {
+    border: none;
+    outline: none;
+    padding: 12px 8px;
+    background-color: transparent;
+    width: 100%;
+    @include for-phone{
+      padding: 8px 5px;
+    }
+  }
+}
+.navRight {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  @include for-phone{
+    column-gap: 5px;
+  }
+}
+.none{
+  @include for-phone{
+    display: none;
+  }
+}

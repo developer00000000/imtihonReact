@@ -1,0 +1,29 @@
+footer{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color:#FFFFFF;
+    z-index: 10;
+    border-top: 1px solid #F1F1F1;
+    padding: 15px 10px 15px 10px;
+    @include for-phone{
+        display: block;
+    }
+}
+.footer{
+    ul{
+       display: flex;
+       justify-content: space-between;
+    }
+     li{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        font-size: 20px;
+        font-weight: 400;
+        align-items: center;
+    }
+
+}
